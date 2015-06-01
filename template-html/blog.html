@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
+
+<insert>head</insert>
+
+<body>
+<div class="wrap-body bm">
+<!-- Header -->
+<insert>header</insert>
+
+<!-- Content -->
+<section id="content">
+	<div class="wrap-content">
+		<div class="row block">
+			<div id="main-content" class="col-3-4">
+				<div class="wrap-col">
+					<article>
+						<div class="heading">
+							<h2><a href="#">博客</a></h2>
+						</div>
+						<div class="info">
+							<p>By Admin on December 01, 2012 - <a href="#">01 Commnets</a></p>
+						</div>
+						<div class="content">
+							#content#
+						</div>
+					</article>
+					
+					<section>
+						<h3>Leave a Comment</h3>
+						
+						<form id="contact-form" method="post">
+						    <fieldset>
+						        <label><input name="email" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" /></label>
+						        <label><input name="subject" value="Subject" onBlur="if(this.value=='') this.value='Subject'" onFocus="if(this.value =='Subject' ) this.value=''" /></label>
+						        <textarea onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Message</textarea>
+						        <div class="buttons">
+						            <a href="#" onClick="document.getElementById('contact-form').reset()">Clear</a>
+						            <a href="#" onClick="document.getElementById('contact-form').submit()">Send</a>
+						        </div>											
+						    </fieldset>           
+						</form>
+					</section>
+				</div>
+			</div>
+
+		<insert>sidebar</insert>
+
+		</div>
+	</div>
+</section>
+<!-- Footer -->
+<insert>footer</insert>
+
+</div>
+</body>
+</html>
