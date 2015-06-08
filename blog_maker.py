@@ -6,6 +6,9 @@ import sys
 import time
 from toolclasses import *
 
+
+blogPath = '../gitblog/'
+
 def code(s):
     return s.decode('gbk').encode('utf-8')
 
@@ -155,7 +158,7 @@ def makeAllListPage():
     cateList = getCateList('content')
     for listName in blogDict:
         templateFile = open('template/list.html','r')
-        pageFile = open('blog/'+listName+'.html','w')
+        pageFile = open(blogPath+listName+'.html','w')
         for line in templateFile:
             if '<bloglist>' in line:
                 writeList(blogDict[listName],line,pageFile,'bloglist')
@@ -172,7 +175,7 @@ def makeAllListPage():
 #根据BlogDO生成blog
 def makeBlog(blog):
     tempFile = open('template/blog.html','r')
-    blogFile = open('blog/'+blog.getUrl(),'w')
+    blogFile = open(blogPath+blog.getUrl(),'w')
     cateList = getCateList('content')
     for line in tempFile:
         if '#title#' in line:
