@@ -11,7 +11,7 @@ input, textarea, select {margin:0; padding:0px;}
 /* -------------------------------------------- */
 /* ------------------Font---------------------- */
 
-/*@font-face {
+@font-face {
   font-family: 'Droid Sans';
   font-style: normal;
   font-weight: 400;
@@ -40,7 +40,7 @@ input, textarea, select {margin:0; padding:0px;}
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(../font/RobotoSlabBold.woff) format('woff');
-}*/
+}
 
 /* -------------------------------------------- */
 /* ------------------Clear--------------------- */
@@ -111,7 +111,7 @@ nav .wrap-nav{display: inline-block; background: #91DBD1; width: 100%;}
 #main-content{}
 #main-content article{ margin-bottom:40px; padding:20px; border: 1px solid #EEEEEE;}
 #main-content article .heading{/*text-align: center;*/ border-bottom: 1px solid #EEEEEE; padding: 0 0 10px 0; margin-bottom: 10px;}
-#main-content article .content{margin: 20px 0;}
+#main-content article .content{}
 #main-content article h2{font-size:30px;}
 #main-content article img{float:left; margin:0 20px 10px 0; padding:3px; border:1px solid #EEEEEE;}
 #main-content article p{margin-bottom:10px; margin-top: 10px;}
@@ -186,3 +186,7 @@ footer .box .gallery img{padding:3px; background: #ffffff; margin: 0 5px 5px 0;}
 
 .copyright{text-align:center; margin-top:20px; background:#91DBD1; padding:10px 0px;color:#ffffff; }
 .copyright a{text-decoration:underline; color:#ffffff; }
+
+
+
+
